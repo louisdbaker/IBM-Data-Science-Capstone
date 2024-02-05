@@ -23,12 +23,12 @@ app.layout = html.Div(children=[html.H1('SpaceX Launch Records Dashboard',
                                 # dcc.Dropdown(id='site-dropdown',...)
                                 dcc.Dropdown(
                                     id = 'site-dropdown',
-                                    options = [
+                                    options=[
                                         {'label' : 'All Sites', 'value': 'ALL'},
-                                        {'label' : 'CCAFS LC-40', 'value': '0'},
-                                        {'label' : 'CCAFS SLC-40', 'value': '1'},
-                                        {'label' : 'KSC LC-39A', 'value': '2'},
-                                        {'label' : 'VAFB SLC-4E', 'value': '3'}
+                                        {'label' : 'CCAFS LC-40', 'value': 'CCAFS LC-40'},
+                                        {'label' : 'CCAFS SLC-40', 'value': 'CCAFS SLC-40'},
+                                        {'label' : 'KSC LC-39A', 'value': 'KSC LC-39A'},
+                                        {'label' : 'VAFB SLC-4E', 'value': 'VAFB SLC-4E'}
                                     ],
                                     value = 'ALL',
                                     placeholder = 'Select a Launch Site Here',
@@ -92,4 +92,4 @@ def get_scatterplot(entered_site, payload_range):
 
 # Run the app
 if __name__ == '__main__':
-    app.run_server()
+    app.run_server(port = 8090)
