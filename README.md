@@ -1,3 +1,3 @@
 # IBM-Data-Science-Capstone
-## Test
-This is a test.
+
+This is my capstone project for the IBM Data Science Professional Certificate.
